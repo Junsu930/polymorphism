@@ -48,6 +48,8 @@ public class Car {
 	@Override
 	public String toString() {
 		// 엔진 / 연료 / 바퀴 개수
-		return engine + " / " + fuel + " / " + "wheel";
+		return engine + " / " + fuel + " / " + wheel;
 	}
+	
+	
 }

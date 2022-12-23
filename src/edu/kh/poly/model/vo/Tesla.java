@@ -33,11 +33,5 @@ public class Tesla extends Car{ //전기차
 	public String toString() {
 		return super.toString() + " / " + batteryCapacity;
 	}
-	
-	
-	
-	
-	
-	
 
 }
