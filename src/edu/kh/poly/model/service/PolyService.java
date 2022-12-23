@@ -26,6 +26,7 @@ public class PolyService {
 		
 		Car car3 = new Spark();
 		
+		
 		// 부모타입 참조변수 = 자식객체 
 	
 		/* ***** 다형성 업캐스팅 작성법 *****
@@ -272,6 +273,10 @@ public class PolyService {
 		// 동적 바인딩 장점
 		// -업캐스팅 상태의 참조변수 
 		// 별도의 다운캐스팅 없이 자식의 오버라이딩된 메소드를 수행할 수 있다. 
+		
+		Car car1 = new Tesla("엉엔진", "메카전기", 50, 200000);
+		
+		car1.toString();
 		
 	}
 }
