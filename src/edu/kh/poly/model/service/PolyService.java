@@ -22,7 +22,7 @@ public class PolyService {
 		Car car2 = new Tesla();
 		// Tesla 객체를 참조하는 변수 타입이 Car(부모)이기 때문에 
 		// Tesla 객체가 Car(부모) 객체로 변화함 
-		// 부모타입 참조면수 = 자식객체 
+		// 부모타입 참조변수 = 자식객체 
 		
 		Car car3 = new Spark();
 		
@@ -188,7 +188,6 @@ public class PolyService {
 		}else {
 			System.out.println("실패(Spark 타입이 아님)");
 		}
-		
 	}
 	
 	public void printCar(Car temp) {

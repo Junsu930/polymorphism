@@ -16,8 +16,6 @@ public interface QuestionInterface {
 	
 	Person searchName();
 	
-	String printName();
-	
 	void printAge();
 	
 	Person deletePerson();

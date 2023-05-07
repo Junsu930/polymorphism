@@ -13,6 +13,7 @@ public class QuestionService implements QuestionInterface{
 	
 	Person ps = new Person();
 	
+	
 	Person[] pArr = null;
 
 	public void displayMenu() {
@@ -36,14 +37,14 @@ public class QuestionService implements QuestionInterface{
 			case 1: selectAll(); break;
 			case 2: selectStudent(); break;
 			case 3: selectEmployee(); break;
-			case 4: if(ps != null) {
+			case 4: if(pArr != null) {
 				searchName(); 
-				ps.information();
+				break;
 			}else {
-					System.out.println("찾는 사람이 없습니다.");
-			
+					System.out.println("등록 인원이 없습니다.");
+					break;
 			} 
-			case 5:
+			case 5: 
 			case 6:
 			case 7: insertPerson(); break;
 			case 0: break;
@@ -180,25 +181,34 @@ public class QuestionService implements QuestionInterface{
 		
 		for(int i = 0; i<pArr.length; i++) {
 			if(pArr[i].getName().equals(name)) {
-				ps = pArr[i];
+				pArr[i].information();
+				return pArr[i];
 			}
 		}
-		
-		return ps;
-		
-		if 
-		
-	}
-
-	@Override
-	public String printName() {
-		// TODO Auto-generated method stub
+		System.out.println("찾는 인원이 없습니다.");
 		return null;
+		
+		
 	}
 
 	@Override
 	public void printAge() {
-		// TODO Auto-generated method stub
+		int sage = 0;
+		int hage = 0;
+		int lage = 0;
+		
+		for(int i = 0; i < pArr.length; i++) {
+			sage += pArr[i].getAge();
+			System.out.println("모든 나이의 합 : "+ sage);
+		}
+		
+		for(int i = 0; i < pArr.length-1; i++) {
+			if(pArr[i].getAge()>pArr[i+1].getAge()) {
+				
+			}
+			System.out.println("모든 나이의 합 : "+ sage);
+		}
+		
 		
 	}
 
